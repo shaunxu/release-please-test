@@ -11,4 +11,4 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         with:
           release-type: node
-          package-name: "@shaunxu/release-please-test"
+          package-name: release-please-test
