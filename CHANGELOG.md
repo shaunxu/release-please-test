@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/shaunxu/release-please-test/compare/v1.0.0...v1.1.0) (2022-05-19)
+
+
+### Features
+
+* add package.json ([d5b960d](https://github.com/shaunxu/release-please-test/commit/d5b960d0ea9c763cebcbb9ee760a895fa8f1e150))
+
+
+### Bug Fixes
+
+* 5 and 6 ([7e05c29](https://github.com/shaunxu/release-please-test/commit/7e05c2976ab0173b8baa008f970380d69cc170ff))
+
 ## 1.0.0 (2022-05-19)
 
 
