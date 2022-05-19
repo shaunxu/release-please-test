@@ -8,15 +8,14 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
-      - name: toggle workflow command echoing
-        run: |
-          echo '::echo::on'
       - uses: google-github-actions/release-please-action@v3
         id: release
         with:
           release-type: node
           package-name: release-please-test
           path: packages/pql
+      - run: |
+          echo ${{ steps.release.outputs.release_created }}
       - uses: actions/checkout@v3
         if: ${{ steps.release.outputs.release_created }}
       - uses: actions/setup-node@v3
