@@ -13,3 +13,13 @@ jobs:
           release-type: node
           package-name: release-please-test
           path: packages/pql
+      - uses: actions/checkout@v3
+        if: ${{ steps.release.outputs.release_created }}
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+        if: ${{ steps.release.outputs.release_created }}
+      - run: npm ci
+        if: ${{ steps.release.outputs.release_created }}
+      - run: npm publish
+        if: ${{ steps.release.outputs.release_created }}
