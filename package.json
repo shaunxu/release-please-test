@@ -1,0 +1,28 @@
+{
+  "name": "release-please-test",
+  "version": "1.0.0",
+  "description": "1 2 3 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shaunxu/release-please-test.git",
+    "directory": "."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaunxu/release-please-test/issues"
+  },
+  "homepage": "https://github.com/shaunxu/release-please-test#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.0",
+    "@commitlint/config-conventional": "^17.0.0"
+  }
+}
