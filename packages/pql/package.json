@@ -1,0 +1,13 @@
+{
+    "name": "@shaunxu/release-please-test",
+    "version": "0.0.0",
+    "type": "commonjs",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/shaunxu/release-please-test.git",
+        "directory": "packages/pql"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    }
+}
