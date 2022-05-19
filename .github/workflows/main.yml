@@ -8,8 +8,9 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-        echo '::echo::on'
+      - name: toggle workflow command echoing
+        run: |
+          echo '::echo::on'
       - uses: google-github-actions/release-please-action@v3
         id: release
         with:
