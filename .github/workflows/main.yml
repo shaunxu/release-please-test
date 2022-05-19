@@ -13,7 +13,7 @@ jobs:
           release-type: node
           package-name: release-please-test
           path: packages/pql
-        name: release
+        id: release
       - uses: actions/checkout@v3
         if: ${{ steps.release.outputs.release_created }}
       - uses: actions/setup-node@v3
