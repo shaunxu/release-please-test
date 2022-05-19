@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.2.3](https://github.com/shaunxu/release-please-test/compare/v1.2.2...v1.2.3) (2022-05-19)
+
+
+### Bug Fixes
+
+* 6 ([f49e9f2](https://github.com/shaunxu/release-please-test/commit/f49e9f231446fd63feacbc6c84272d4b39c756af))
+
 ### [1.2.2](https://github.com/shaunxu/release-please-test/compare/v1.2.1...v1.2.2) (2022-05-19)
 
 
