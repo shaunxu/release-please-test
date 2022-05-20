@@ -14,13 +14,17 @@ jobs:
           release-type: node
           package-name: release-please-test
           path: packages/pql
-      - uses: actions/checkout@v3
-        if: ${{ steps.release.outputs.releases_created }}
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-        if: ${{ steps.release.outputs.releases_created }}
-      - run: npm ci
-        if: ${{ steps.release.outputs.releases_created }}
-      - run: npm publish
-        if: ${{ steps.release.outputs.releases_created }}
+      # - uses: actions/checkout@v3
+      #   if: ${{ steps.release.outputs.releases_created }}
+      # - uses: actions/setup-node@v3
+      #   with:
+      #     node-version: 18
+      #     registry-url: 'https://npm.pkg.github.com'
+      #     scope: '@shaunxu'
+      #   if: ${{ steps.release.outputs.releases_created }}
+      # - run: npm ci
+      #   if: ${{ steps.release.outputs.releases_created }}
+      # - run: npm publish
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   if: ${{ steps.release.outputs.releases_created }}
